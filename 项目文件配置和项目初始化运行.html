@@ -1,0 +1,523 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>项目文件配置和项目初始化运行 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="xorm框架介绍.html" />
+    
+    
+    <link rel="prev" href="session的使用和控制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="GET、POST等请求及数据处理.html">
+            
+                <a href="GET、POST等请求及数据处理.html">
+            
+                    
+                    GET、POST等请求及数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="请求处理的数据格式返回.html">
+            
+                <a href="请求处理的数据格式返回.html">
+            
+                    
+                    请求处理的数据格式返回
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="路由.html">
+            
+                <a href="路由.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="iris框架设置.html">
+            
+                <a href="iris框架设置.html">
+            
+                    
+                    iris框架设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="mvc包使用.html">
+            
+                <a href="mvc包使用.html">
+            
+                    
+                    mvc包使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="session的使用和控制.html">
+            
+                <a href="session的使用和控制.html">
+            
+                    
+                    session的使用和控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="项目文件配置和项目初始化运行.html">
+            
+                <a href="项目文件配置和项目初始化运行.html">
+            
+                    
+                    项目文件配置和项目初始化运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="xorm框架介绍.html">
+            
+                <a href="xorm框架介绍.html">
+            
+                    
+                    xorm框架介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="xorm结构体映射规则和表操作.html">
+            
+                <a href="xorm结构体映射规则和表操作.html">
+            
+                    
+                    xorm结构体映射规则和表操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="xorm表基本操作及高级操作.html">
+            
+                <a href="xorm表基本操作及高级操作.html">
+            
+                    
+                    xorm表基本操作及高级操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >项目文件配置和项目初始化运行</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x548C;&#x9879;&#x76EE;&#x521D;&#x59CB;&#x5316;&#x8FD0;&#x884C;">&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x548C;&#x9879;&#x76EE;&#x521D;&#x59CB;&#x5316;&#x8FD0;&#x884C;</h1>
+<h3 id="conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x4FE1;&#x606F;">conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</h3>
+<p>&#x6211;&#x4EEC;&#x524D;&#x9762;&#x8BF4;&#x8FC7;&#xFF0C;&#x4F7F;&#x7528;config.json&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x8FDB;&#x884C;&#x9879;&#x76EE;&#x7684;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x3002;&#x5728;&#x672C;&#x8282;&#x5185;&#x5BB9;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x505A;&#x7B80;&#x5355;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#x3002;&#x5305;&#x542B;&#x4E24;&#x90E8;&#x5206;&#xFF1A;config.json&#x548C;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>{
+  &quot;app_name&quot;: &quot;CmsProject&quot;,
+  &quot;port&quot;: &quot;9000&quot;,
+  &quot;static_path&quot;: &quot;/manage/static&quot;,
+  &quot;mode&quot;: &quot;dev&quot;
+}
+</code></pre><p>&#x76F8;&#x5E94;&#x7684;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;AppConfig&#x7ED3;&#x6784;&#x4F53;&#x548C;InitConfig&#x65B9;&#x6CD5;&#x6765;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code>type AppConfig struct {
+    AppName    string `json:&quot;app_name&quot;`
+    Port       int
+    StaticPath string `json:&quot;static_path&quot;`
+    Mode       string `json:&quot;mode&quot;`
+}
+</code></pre><h3 id="&#x9759;&#x6001;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#x914D;&#x7F6E;&#x53CA;&#x6A21;&#x7248;&#x6587;&#x4EF6;&#x914D;&#x7F6E;">&#x9759;&#x6001;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#x914D;&#x7F6E;&#x53CA;&#x6A21;&#x7248;&#x6587;&#x4EF6;&#x914D;&#x7F6E;</h3>
+<ul>
+<li><p><strong>&#x9759;&#x6001;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#x914D;&#x7F6E;&#xFF1A;</strong>&#x5728;Iris&#x6846;&#x67B6;&#x4E2D;&#xFF0C;&#x63D0;&#x4F9B;&#x4E13;&#x95E8;&#x7684;&#x65B9;&#x6CD5;&#x4F9B;&#x5F00;&#x53D1;&#x8005;&#x8BBE;&#x7F6E;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x6709;&#x8BBE;&#x7F6E;&#x4E86;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#xFF0C;&#x624D;&#x80FD;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF0C;&#x5426;&#x5219;&#x662F;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7684;&#x3002;iris&#x8BBE;&#x7F6E;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#x6848;&#x4F8B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>  app.StaticWeb(&quot;/manage/static&quot;, &quot;./static&quot;)
+</code></pre></li>
+<li><p><strong>&#x6A21;&#x7248;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#xFF1A;</strong>Iris&#x6846;&#x67B6;&#x4E2D;&#x8FD8;&#x652F;&#x6301;&#x6211;&#x4EEC;&#x6CE8;&#x518C;&#x6A21;&#x7248;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x5982;&#x4E0B;&#x6848;&#x4F8B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>  app.RegisterView(iris.HTML(&quot;./static&quot;, &quot;.html&quot;))
+</code></pre></li>
+</ul>
+<h3 id="&#x9879;&#x76EE;&#x521D;&#x59CB;&#x5316;&#x8FD0;&#x884C;">&#x9879;&#x76EE;&#x521D;&#x59CB;&#x5316;&#x8FD0;&#x884C;</h3>
+<p>&#x5728;&#x8FDB;&#x884C;&#x5B8C;&#x9879;&#x76EE;&#x67B6;&#x6784;&#x548C;&#x4E0A;&#x8FF0;&#x7684;&#x9879;&#x76EE;&#x914D;&#x7F6E;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x542F;&#x52A8;&#x6211;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x67E5;&#x770B;&#x9879;&#x76EE;&#x6548;&#x679C;&#x3002;&#x81F3;&#x6B64;&#xFF0C;&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x548C;&#x57FA;&#x7840;&#x73AF;&#x5883;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x5B8C;&#x6BD5;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4E3B;&#x8981;&#x805A;&#x7126;&#x89C6;&#x7EBF;&#x9879;&#x76EE;&#x529F;&#x80FD;&#x3002;</p>
+<pre><code class="lang-golang"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;github.com/kataras/iris&quot;</span>
+    <span class="hljs-string">&quot;github.com/kataras/iris/context&quot;</span>
+    <span class="hljs-string">&quot;github.com/kataras/iris/mvc&quot;</span>
+    <span class="hljs-string">&quot;irisDemo/CmsProject/service&quot;</span>
+    <span class="hljs-string">&quot;irisDemo/CmsProject/controller&quot;</span>
+    <span class="hljs-string">&quot;irisDemo/CmsProject/datasource&quot;</span>
+    <span class="hljs-string">&quot;github.com/kataras/iris/sessions&quot;</span>
+    <span class="hljs-string">&quot;time&quot;</span>
+    <span class="hljs-string">&quot;irisDemo/CmsProject/config&quot;</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+    app := newApp()
+
+    <span class="hljs-comment">//&#x5E94;&#x7528;App&#x8BBE;&#x7F6E;</span>
+    configation(app)
+
+    <span class="hljs-comment">//&#x8DEF;&#x7531;&#x8BBE;&#x7F6E;</span>
+    mvcHandle(app)
+
+    config := config.InitConfig()
+    addr := <span class="hljs-string">&quot;:&quot;</span> + config.Port
+    app.Run(
+        iris.Addr(addr),                               <span class="hljs-comment">//&#x5728;&#x7AEF;&#x53E3;9000&#x8FDB;&#x884C;&#x76D1;&#x542C;</span>
+        iris.WithoutServerError(iris.ErrServerClosed), <span class="hljs-comment">//&#x65E0;&#x670D;&#x52A1;&#x9519;&#x8BEF;&#x63D0;&#x793A;</span>
+        iris.WithOptimizations,                        <span class="hljs-comment">//&#x5BF9;json&#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x66F4;&#x5FEB;&#x7684;&#x914D;&#x7F6E;</span>
+    )
+}
+
+<span class="hljs-comment">//&#x6784;&#x5EFA;App</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">newApp</span><span class="hljs-params">()</span> *<span class="hljs-title">iris</span>.<span class="hljs-title">Application</span></span> {
+    app := iris.New()
+
+    <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;  &#x5F00;&#x53D1;&#x9636;&#x6BB5;&#x4E3A;debug</span>
+    app.Logger().SetLevel(<span class="hljs-string">&quot;debug&quot;</span>)
+
+    <span class="hljs-comment">//&#x6CE8;&#x518C;&#x9759;&#x6001;&#x8D44;&#x6E90;</span>
+    app.StaticWeb(<span class="hljs-string">&quot;/static&quot;</span>, <span class="hljs-string">&quot;./static&quot;</span>)
+    app.StaticWeb(<span class="hljs-string">&quot;/manage/static&quot;</span>, <span class="hljs-string">&quot;./static&quot;</span>)
+
+    <span class="hljs-comment">//&#x6CE8;&#x518C;&#x89C6;&#x56FE;&#x6587;&#x4EF6;</span>
+    app.RegisterView(iris.HTML(<span class="hljs-string">&quot;./static&quot;</span>, <span class="hljs-string">&quot;.html&quot;</span>))
+    app.Get(<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(context context.Context)</span></span> {
+        context.View(<span class="hljs-string">&quot;index.html&quot;</span>)
+    })
+
+    <span class="hljs-keyword">return</span> app
+}
+
+<span class="hljs-comment">/**
+ * MVC &#x67B6;&#x6784;&#x6A21;&#x5F0F;&#x5904;&#x7406;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mvcHandle</span><span class="hljs-params">(app *iris.Application)</span></span> {
+
+    <span class="hljs-comment">//&#x542F;&#x7528;session</span>
+    sessManager := sessions.New(sessions.Config{
+        Cookie:  <span class="hljs-string">&quot;sessioncookie&quot;</span>,
+        Expires: <span class="hljs-number">24</span> * time.Hour,
+    })
+
+    engine := datasource.NewMysqlEngine()
+
+    <span class="hljs-comment">//&#x7BA1;&#x7406;&#x5458;&#x6A21;&#x5757;&#x529F;&#x80FD;</span>
+    adminService := service.NewAdminService(engine)
+
+    admin := mvc.New(app.Party(<span class="hljs-string">&quot;/admin&quot;</span>))
+    admin.Register(
+        adminService,
+        sessManager.Start,
+    )
+    admin.Handle(<span class="hljs-built_in">new</span>(controller.AdminController))
+
+    <span class="hljs-comment">//&#x7528;&#x6237;&#x529F;&#x80FD;&#x6A21;&#x5757;</span>
+    userService := service.NewUserService(engine)
+
+    user := mvc.New(app.Party(<span class="hljs-string">&quot;/v1/users&quot;</span>))
+    user.Register(
+        userService,
+        sessManager.Start,
+    )
+    user.Handle(<span class="hljs-built_in">new</span>(controller.UserController))
+
+    <span class="hljs-comment">//&#x7EDF;&#x8BA1;&#x529F;&#x80FD;&#x6A21;&#x5757;</span>
+    statisService := service.NewStatisService(engine)
+    statis := mvc.New(app.Party(<span class="hljs-string">&quot;/statis/{model}/{date}/&quot;</span>))
+    statis.Register(
+        statisService,
+        sessManager.Start,
+    )
+    statis.Handle(<span class="hljs-built_in">new</span>(controller.StatisController))
+}
+
+<span class="hljs-comment">/**
+ * &#x9879;&#x76EE;&#x8BBE;&#x7F6E;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">configation</span><span class="hljs-params">(app *iris.Application)</span></span> {
+
+    <span class="hljs-comment">//&#x914D;&#x7F6E; &#x5B57;&#x7B26;&#x7F16;&#x7801;</span>
+    app.Configure(iris.WithConfiguration(iris.Configuration{
+        Charset: <span class="hljs-string">&quot;UTF-8&quot;</span>,
+    }))
+
+    <span class="hljs-comment">//&#x9519;&#x8BEF;&#x914D;&#x7F6E;</span>
+    <span class="hljs-comment">//&#x672A;&#x53D1;&#x73B0;&#x9519;&#x8BEF;</span>
+    app.OnErrorCode(iris.StatusNotFound, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(context context.Context)</span></span> {
+        context.JSON(iris.Map{
+            <span class="hljs-string">&quot;errmsg&quot;</span>: iris.StatusNotFound,
+            <span class="hljs-string">&quot;msg&quot;</span>:    <span class="hljs-string">&quot; not found &quot;</span>,
+            <span class="hljs-string">&quot;data&quot;</span>:   iris.Map{},
+        })
+    })
+
+    app.OnErrorCode(iris.StatusInternalServerError, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(context context.Context)</span></span> {
+        context.JSON(iris.Map{
+            <span class="hljs-string">&quot;errmsg&quot;</span>: iris.StatusInternalServerError,
+            <span class="hljs-string">&quot;msg&quot;</span>:    <span class="hljs-string">&quot; interal error &quot;</span>,
+            <span class="hljs-string">&quot;data&quot;</span>:   iris.Map{},
+        })
+    })
+}
+</code></pre>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="session的使用和控制.html" class="navigation navigation-prev " aria-label="Previous page: session的使用和控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="xorm框架介绍.html" class="navigation navigation-next " aria-label="Next page: xorm框架介绍">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"项目文件配置和项目初始化运行","level":"1.8","depth":1,"next":{"title":"xorm框架介绍","level":"1.9","depth":1,"path":"xorm框架介绍.md","ref":"xorm框架介绍.md","articles":[]},"previous":{"title":"session的使用和控制","level":"1.7","depth":1,"path":"session的使用和控制.md","ref":"session的使用和控制.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-sharing","theme-default","-lunr","fontsettings","livereload","popup","splitter","copy-code-button","highlight","-expandable-chapters-small","chapter-fold","back-to-top-button","search-pro","-expandable-chapters","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"项目文件配置和项目初始化运行.md","mtime":"2019-12-30T12:41:05.679Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-31T02:38:50.519Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+
+    </body>
+</html>
+
